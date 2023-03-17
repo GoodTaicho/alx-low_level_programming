@@ -7,17 +7,17 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
-{
+	int main(void)
+	{
 		char c;
 
 		c = 'a';
 		while (c <= 'z')
 		{
-			if (c != 'q' && c != 'e')
+			if (c != 24 && c != 28)
 			    putchar(c);
 			c++;
 		}
 		putchar('\n');
 		return (0);
-}
+	}
