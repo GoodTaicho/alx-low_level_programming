@@ -7,15 +7,16 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+int main()
 {
-		int letter;
+		char c;
 
-		for (letter = 'a'; i <= 'z'; letter++)
+		c = 'a';
+		while (c <= 'z')
 		{
-			if (letter != 'e' && letter != 'q')
-			{
-																			putchar(letter);												}
+			if (c != 'q' && c != 'e')
+			    putchar(c);
+			c++;
 		}
 		putchar('\n');
 		return (0);
