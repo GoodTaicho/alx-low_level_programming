@@ -3,12 +3,12 @@
 #include <string.h>
 
 /**
- * main - Prints the alphabet without q and e.
- *
+ * main : Entry point
+ * Description: prints the alphabet in lowercase expect 'e' and 'q'
  * Return: Always 0 (Success)
  */
 	int main(void)
-	{
+{
 		char c;
 
 		c = 'a';
@@ -20,4 +20,4 @@
 		}
 		putchar('\n');
 		return (0);
-	}
+}
