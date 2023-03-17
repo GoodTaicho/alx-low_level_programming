@@ -14,7 +14,7 @@
 		c = 'a';
 		while (c <= 'z')
 		{
-			if (c != 24 && c != 28)
+			if (c != 'q' && c != 'e')
 			    putchar(c);
 			c++;
 		}
