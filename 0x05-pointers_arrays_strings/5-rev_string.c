@@ -22,7 +22,7 @@ void rev_string(char *s)
 		{
 			s[index] = comp[counter];
 			index++;
-		}	
+		}
 	}
 	else
 	{
