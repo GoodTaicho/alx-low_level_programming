@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 /**
  * is_palindrome - check if a given string is a palindrome
@@ -13,7 +14,10 @@ char *bck(char *s);
 
 int is_palindrome(char *s)
 {
-	if (fwd(s) == bck(s))
+	char *fwd_str = fwd(s);
+	char *bck_str = bck(s);
+
+	if (strcmp(fwd_str, bck_str) == 0)
 	{
 		return (1);
 	}
@@ -23,26 +27,31 @@ int is_palindrome(char *s)
 
 char *fwd(char *s)
 {
-	char *result;
+	int len = strlen(s);
+	char *result = malloc(len + 1);
 
-	if (*s != '\0')
+	for (int i = 0; i < len; i++)
 	{
-		*result = *s;
-		fwd(s + 1);
+		result[i] = s[i];
 	}
+
+	result[len] = '\0';
 
 	return (result);
 }
 
 char *bck(char *s)
 {
-	char *result;
+	int len = strlen(s);
+	char *result = malloc(len + 1);
 
-	if (*s != '\0')
+
+	for (int i = 0; i < len; i++)
 	{
-		*result = *s;
-		bck(s + 1);
+		result[i] = s[len - i - 1];
 	}
+
+	result[len] = '\0';
 
 	return (result);
 }
