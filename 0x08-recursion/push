@@ -1,5 +1,5 @@
 #!/bin/bash
 
 git add .
-git commit -m "Added file or made changes (generic)"
+git commit -m "work100"
 git push origin master
