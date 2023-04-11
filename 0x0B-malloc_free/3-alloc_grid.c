@@ -36,7 +36,7 @@ int **alloc_grid(int width, int height)
 			break;
 		}
 	}
-	
+
 	if (stop == 1)
 	{
 		free(array);
